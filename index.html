@@ -11,18 +11,19 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1 class="text-center">PHONE SEEKER</h1>
+    <header class="header">
+        <h1 class="text-center text-light mt-3">PHONE SEEKER</h1>
+        <div  class="input-group mb-3 mt-3 d-flex      justify-content-center">
+          <input id="input-field" type="text" placeholder="phone name">
+          <button onclick="loadPhone()" class="btn btn-primary" type="button" id="search-button">search</button>
+        </div>
+        <hr>
     </header>
 
     <main>
       <!-- ---------input-field---------- -->
-        <div  class="input-group mb-3 mt-3 d-flex justify-content-center">
-            <input id="input-field" type="text" placeholder="phone name">
-            <button onclick="loadPhone()" class="btn btn-primary" type="button" id="search-button">search</button>
-          </div>
-          
-          <section class="container">
+     <section class="container">
+
             <div id="phone-details" class="card mb-3" style="max-width: 540px;">
               <!-- <div class="row g-0">
                 <div class="col-md-4">

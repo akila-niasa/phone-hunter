@@ -52,13 +52,16 @@ const displayPhoneDetail=(Details)=>{
   </div>
   <div class="col-md-8">
     <div class="card-body">
-      <h2 class="card-title">${Details.name}</h2>
-      <h5>${Details.releaseDate?Details.releaseDate:'release date no found'}</h5>
-      <p class="card-text"><small class="text-muted">ChipSet: ${Details.mainFeatures.chipSet}</small></p>
-      <p class="card-text"><small class="text-muted">displaySize: ${Details.mainFeatures.displaySize}</small></p>
-      <p class="card-text"><small class="text-muted">memory: ${Details.mainFeatures.memory}</small></p>
-      <p class="card-text"><small class="text-muted">storage: ${Details.mainFeatures.storage}</small></p>
-      <p class="card-text"><small class="text-muted">sensors: ${Details.mainFeatures.sensors}</small></p>
+      <h2 class="card-title">${Details.name}
+      </h2>
+       <h5>${Details.releaseDate?Details.releaseDate:'release date no found'}
+      </h5>
+        <p class="card-text"><small class="text-muted">ChipSet: ${Details.mainFeatures.chipSet}</small></p>
+        <p class="card-text"><small class="text-muted">displaySize: ${Details.mainFeatures.displaySize}</small></p>
+        <p class="card-text"><small class="text-muted">memory: ${Details.mainFeatures.memory}</small></p>
+        <p class="card-text"><small class="text-muted">storage: ${Details.mainFeatures.storage}</small></p>
+       <p class="card-text"><small class="text-muted">sensors: ${Details.mainFeatures.sensors}</small>
+       </p>
 
       ${Details.others?`<p class="card-text"><small class="text-muted">Bluetooth: ${Details.others.Bluetooth}</small></p>
       <p class="card-text"><small class="text-muted">GPS: ${Details.others.GPS}</small></p>
