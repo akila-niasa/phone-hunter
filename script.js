@@ -1,5 +1,6 @@
 /* ------------iputValue-----------*/
 const loadPhone=()=>{
+  document.getElementById("error-msg").textContent=''
     const inputField=document.getElementById("input-field").value
     // console.log(inputField);
    const url=`https://openapi.programming-hero.com/api/phones?search=${inputField}`
