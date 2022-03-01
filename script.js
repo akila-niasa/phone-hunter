@@ -1,14 +1,14 @@
-
+/* ------------iputValue-----------*/
 const loadPhone=()=>{
     const inputField=document.getElementById("input-field").value
-    console.log(inputField);
+    // console.log(inputField);
    const url=`https://openapi.programming-hero.com/api/phones?search=${inputField}`
    fetch(url)
    .then(res=>res.json())
    .then(data=>displayPhone(data.data))
    document.getElementById("input-field").value=''
 }
-
+/*-----------displayPhone------------*/
 const displayPhone=(allphones)=>{
     // console.log(phones);
     
@@ -36,16 +36,16 @@ const displayPhone=(allphones)=>{
       phoneList.appendChild(div)
     })
 }
-
+/*------------LoadPhoneDetails------------*/ 
 const loadPhoneDetail=(id)=>{
   const url=` https://openapi.programming-hero.com/api/phone/${id}`
   fetch(url)
   .then(res=>res.json())
   .then(data=>displayPhoneDetail(data.data))
 }
-
+/*------------displayPhoneDetails---------------- */
 const displayPhoneDetail=(Details)=>{
-  console.log(Details);
+  // console.log(Details);
   const phoneDetail=document.getElementById("phone-details")
   const div=document.createElement("div")
   div.classList.add("card")

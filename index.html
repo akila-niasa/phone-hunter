@@ -13,6 +13,7 @@
 <body>
     <header class="header">
         <h1 class="text-center text-light mt-3">PHONE SEEKER</h1>
+              <!-- ---------input-field---------- -->
         <div  class="input-group mb-3 mt-3 d-flex      justify-content-center">
           <input id="input-field" type="text" placeholder="phone name">
           <button onclick="loadPhone()" class="btn btn-primary" type="button" id="search-button">search</button>
@@ -21,40 +22,21 @@
     </header>
 
     <main>
-      <!-- ---------input-field---------- -->
-     <section class="container">
 
+     <section class="container">
+       <!-- -----------phone-details------------- -->
             <div id="phone-details">
-             <!-- <div class="card">
-                <div class="row g-0">
-                <div class="col-md-4">
-                  <img src="..." class="img-fluid rounded-start" alt="...">
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                  </div>
-                </div>
-              </div>
-             </div> -->
+
             </div>
+            <!-- -----------error-message----------- -->
             <h2 id="error-msg" class="text-center"></h2>
+            <!-- ------------phone-list------------ -->
             <div id="phone-list" class="row row-cols-1 row-cols-md-3 gx-3 gy-3">
-                <!-- <div class="col">
-                  <div class="card">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    </div>
-                  </div>
-                </div> -->
-               
+             
               </div>
           </section>
     </main>
+    <!-- -------------script------------- -->
     <script src="script.js"></script>
 </body>
 </html>
