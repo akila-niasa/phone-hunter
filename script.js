@@ -1,3 +1,4 @@
+
 const loadPhone=()=>{
     const inputField=document.getElementById("input-field").value
     console.log(inputField);
@@ -7,6 +8,7 @@ const loadPhone=()=>{
    .then(data=>displayPhone(data.data))
    document.getElementById("input-field").value=''
 }
+
 const displayPhone=(allphones)=>{
     // console.log(phones);
     
@@ -46,8 +48,9 @@ const displayPhoneDetail=(Details)=>{
   console.log(Details);
   const phoneDetail=document.getElementById("phone-details")
   const div=document.createElement("div")
+  div.classList.add("card")
   div.innerHTML=`
-  <div class="row g-0">
+  <div class="row g-0 mt-3">
   <div class="col-md-4">
     <img src="${Details.image}" class="img-fluid rounded-start" alt="...">
   </div>
