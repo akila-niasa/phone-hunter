@@ -1,9 +1,14 @@
 .header{
     background-color: midnightblue;
+    /* background-color: deepskyblue; */
+   
 }
 main{
-    background-color: rgb(108, 42, 231);
+    background-color:  rgb(39, 4, 71);
+    /* background-color: darkturquoise; */
+   
 }
 body{
     background-color:rgb(16, 22, 46) ;
+    /* background-color: lightseagreen; */
 }

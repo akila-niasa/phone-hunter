@@ -18,6 +18,7 @@ const displayPhone=(allphones)=>{
      errorMsg.style.color="red"
     }
     document.getElementById("phone-list").innerHTML=''
+    document.getElementById("phone-details").innerHTML=''
     phones.forEach(phone=>{
         const div=document.createElement("div")
         div.classList.add('col')
